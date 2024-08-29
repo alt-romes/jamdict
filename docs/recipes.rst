@@ -107,6 +107,13 @@ By default jamdict provides two maps:
    # 鼎 ['three legged kettle']
    # 鼑 []
 
+   # Find the Kangxi radical of the character (the said principle component)
+   radical = jam.lookup("蹴").chars[0].radical
+   print(radical)
+   # 足-foot[sc:7]
+   print(radical.radical, radical.meaning)
+   # 足 foot
+
 Finding name entities
 ---------------------
 
